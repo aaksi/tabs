@@ -1,0 +1,24 @@
+ $('.gallery__small img').on('click', function(e){
+        if($('.gallery__big img').attr('src')!== $(this).attr('src')){
+
+            $('.gallery__big img').hide().attr('src', $(this).attr('src')).fadeIn(500);
+        }
+        e.preventDefault();
+    });
+    
+    
+    
+    
+                                  <div class="catalog__card-gallery">
+                                    <div class="gallery__big">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="gallery-line">
+                                        <div class="gallery__small">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="gallery__small">
+                                            <img src="" alt="">
+                                        </div>
+                                      </div>
+                                   </div>
